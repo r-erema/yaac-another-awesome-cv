@@ -174,7 +174,7 @@
 \setlength{\fulllength}{17.8cm}
 
 \newlength{\leftcolumnlength}
-\setlength{\leftcolumnlength}{2.5cm}
+\setlength{\leftcolumnlength}{1.5cm}
 
 \newlength{\rightcolumnlength}
 %\setlength{\rightcolumnlength}{15.3cm minus 1cm}
@@ -201,6 +201,7 @@
 \newcommand{\mediumSymbol}{\faMedium}
 \newcommand{\bitbucketSymbol}{\faBitbucket}
 \newcommand{\websiteSymbol}{\faLink}
+\newcommand{\leetcodeSymbol}{\faCode}
 
 
 \newcommand\link[2]{\color{linkcolor}\href{#1}{#2}\color{Black} }
@@ -262,7 +263,11 @@
 
 % Render author's github (optional)
 % Usage: \github{<github-nick>}
-\newcommand*{\github}[1]{\sociallink{\githubSymbol}{https://www.github.com/#1}{github.com/#1}}           % Github icon + URL
+\newcommand*{\github}[1]{\sociallink{\githubSymbol}{https://www.github.com/#1}{github.com/#1}}
+
+% Render author's github (optional)
+% Usage: \github{<github-nick>}
+\newcommand*{\leetcode}[1]{\sociallink{\leetcodeSymbol}{https://leetcode.com/#1}{leetcode.com/#1}}           % Github icon + URL
 
 % Render author's stackoverflow profile (optional)
 % Usage: \stackoverflow{<stackoverflow-user-id>}
@@ -362,7 +367,6 @@
         \idphoto
       \end{minipage}
     }{}
-    \bigskip
   }
 }
 
@@ -382,7 +386,7 @@
 \newenvironment{keywords}{%
   \renewcommand{\arraystretch}{1.1}
 
-  \begin{tabular}{>{}r>{}p{13cm}}
+  \begin{tabular}{>{}r>{}p{16cm}}
 }{%
   \end{tabular}
 }
@@ -440,7 +444,7 @@
 %                    }
 %                    {<Technology list>}
 \newcommand\experience[7]{
-  \textbf{#1}    & \textbf{#2, \textsc{#3}, #4}   								\\*
+  \textbf{#1}    & \textbf{{\color{accentcolor}#2}, #3 | \textsc{#4}}   								\\*
   \textbf{#5}    & \begin{minipage}[t]{\rightcolumnlength}
   					         #6
                    \end{minipage}										\\*

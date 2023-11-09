@@ -10,76 +10,195 @@
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 
 %Section: Work Experience at the top
-\sectionTitle{Expériences Professionelles}{\faSuitcase}
+\sectionTitle{Experience}{\faSuitcase}
 %\renewcommand{\labelitemi}{$\bullet$}
 \begin{experiences}
   \experience
-    {Aujourd'hui}   {Architecte logiciel | Développeur/Concepteur Senior JEE}{EPI}{Nouvelle-Calédonie}
-    {Décembre 2015} {
-                      \begin{itemize}
-                        \item Applications hybrides : Conception et développement
-                        \item Développements de micro services REST avec Spring Boot : Conception et développement
-                        \item Product Owner : Projet Simply City
-                        \item Reconstruction de la plateforme d'intégration
-                        \item Migration des projets Java sous Maven
-                        \item Evolutions et corrections des bugs du framework de développement interne  
-                      \end{itemize}
-                    }
-                    {Spring Boot,IntelliJ Idea,Ionic 3,Typescript,Firebase,Apache Tomcat,Eclipse,Maven,Jenkins,Nexus}
+    {Jan. 2022} {Kubernetes}{Worldwide distributed}{Contributor (Go Developer)}
+    {Pres.}
+    {
+      The container-centric management software, has become the \textbf{de facto standard to deploy and operate containerized applications}.
+      It's used by companies like \textbf{Google}, \textbf{Uber}, \textbf{Spotify}, \textbf{Salesforce}, etc. to manage their production workloads
+      \begin{itemize}
+        \item {\href{https://github.com/kubernetes/kubernetes/issues/110782}
+        {Implemented OIDC Test Server and test coverage of the most critical OIDC cases}.
+        OIDC Test Server allows contributors to \textbf{save time handling test cases} and \textbf{raise the quality of the K8S} in terms of OIDC}
+        \item {\href{https://github.com/kubernetes-sigs/aws-load-balancer-controller/pull/2735}
+        {Resolved the issue of building listener rules based on ingress manifests for the AWS Load Balancer}}
+        \item {\href{https://github.com/kubernetes/kubernetes/issues/110464}
+        {Resolved the issue of premature deletion of uncompleted Kubernetes jobs}}
+        \item {Created "1 click" automation to raise the development local cluster with the ability
+        to debug(using GoLand by JetBrains) every single component of K8S - API Server, Controller Manager, Scheduler, and Kubelet,
+          that saving time for the creation of the K8S infrastructure for convenient debugging of full data flow across each K8S component}
+      \end{itemize}
+    }
+    {
+      Go, OAuth2, gRPC, gomock, testify, golang/oauth2, AWS ALB Controller
+    }
   \emptySeparator
+
   \experience
-    {Novembre 2015} {Architecte logiciel | Développeur/Concepteur Senior JEE}{\link{http://www.cafat.nc}{CAFAT}}{Nouvelle-Calédonie}
-    {Avril 2014}    {
-                      \begin{itemize}
-                        \item Support et encadrement technique des équipes de développement                           
-                        \item Suivi, validation et intégration des développements externalisés                        
-                        \item Implémentation, analyse et livraison de correctifs de bugs sur les applicatifs métiers  
-                        \item Evolutions et corrections des bugs du framework de développement interne                
-                        \item Rédaction des dossiers d'architecture en collaboration avec les architectes fonctionnels
-                        \item Veille technologique                                                                    
-                      \end{itemize}
-                    }
-                    {IntelliJ Idea,JBoss EAP,Eclipse,Maven,Jenkins,Nexus}
+    {Feb. 2021} {EBANQ}{Málaga, Spain}{DevOps/SRE}
+    {Pres.}
+    {
+      The multicontinental company which provides turn‑key solutions for Banks, Neobanks, Electronic Money Institutions,
+      Payment Institutions, Insurance Companies, Remittance Companies, Asset Managers.
+      The project has \textbf{40K+ active accounts} distributed over \textbf{80 environments(compute and DB servers, blob
+      storages, etc.)} and handles \textbf{500K+ transfers} and \textbf{1M+ transactions} monthly.
+      \begin{itemize}
+        \item {\textbf{Redesigned and migrated} the architecture in favor of the \textbf{Kubernetes cluster}.
+        That reduced the underutilization of the virtual machines and \textbf{saved 40\% costs} on the same workloads}
+        \item {Actively \textbf{researched and implemented cost-reducing architectural solutions} (replacing RabbitMQ with Amazon SQS,
+        applying RDS and EC2 Reserved Instances, etc.), that \textbf{reduced resource consumption and cloud costs by 20\%}}
+        \item {\textbf{Performed automation for daily DevOps routines} using Jenkins, Terraform, Bash, etc., which \textbf{saved}
+        significant amount of working \textbf{time(at least 50\%)}}
+        \item {Implemented DB secrets rotation using Vault in Kubernetes}
+        \item {Even distribution of the cluster costs across clients using Kubecost}
+        \item {Replaced AWS EBS volumes in K8S cluster with Mountpoint for Amazon S3 \textbf{to make services scalable} and \textbf{reduce efforts for maintenance}}
+        \item {Eliminated infrastructure security issues}
+      \end{itemize}
+    }
+    {
+      AWS, Kubernetes, Jenkins, Docker, Kube Prometheus Stack, Hashicorp Vault, Bash, AWS EKS, Calico, AWS EC2, AWS S3,
+      AWS RDS, AWS CloudWatch, AWS IAM, AWS Route53, AWS Backup, AWS Lightsail, Makefile, Ansible, Groovy, Nginx,
+      Disaster Recovery, Secrets Rotation, Helm, Autoscaler, The Vault Secrets Operator, AWS Load Balancer Controller,
+      Amazon EBS CSI driver, Lens, Fluent Bit, Kubecost, Kuberhealthy, Open Policy Agent
+    }
   \emptySeparator
+
   \experience
-    {Mars 2014}     {Architecte logiciel | Développeur/Concepteur Senior JEE}{Bull SAS}{France}
-    {Avril 2012}    {
-                      \begin{itemize}
-                        \item Reconstruction du dépôt fiduciaire de logiciels de Bull Coriolis : réalisation, coordination et reporting
-                        \item Migration du serveur métier vers Open Cobol : suivi de projet et reporting                
-                        \item Solution documentaire collaborative (wiki) : mise en place et formation                   
-                        \item Evolutions et corrections : analyse, conception et développement                          
-                        \item Mise en place de conventions de code                                                      
-                        \item Mise en place d'un framework de développement d'interface web (jQuery, Bootstrap, taglibs)
-                      \end{itemize}
-                    }
-                    {Tomcat,Spring,Eclipse,Maven,Oracle DB,Hibernate,RichFaces,AngularJS,jQuery,Bootstrap,LESS}
+  {Jun. 2020} {Roombot}{Minsk}{Senior Software Engineer}
+  {Pres.}
+  {
+    Online booking and scheduling software for meeting rooms. The system provides simple tools, such as a Telegram Bot,
+    a Slack bot, and public RESTful API for reserving conference rooms and other spaces or resources within the company's
+  offices. The software ensures that organizers and attendees have the necessary accommodations for meetings.
+  RoomBot has integration with Microsoft Exchange Server and Microsoft Office 365.
+    \begin{itemize}
+      \item {Building a \textbf{Kubernetes} cluster for production and testing environments from scratch, which \textbf{increased reliability} of the system by \textbf{30\%}
+      and \textbf{reduced deployment time by 50\%}}
+      \item {Integrated \textbf{Microsoft Office 365} interaction using \textbf{Microsoft Graph}}
+      \item {Implemented \textbf{OAuth2 Authentication}}
+      \item {Established \textbf{integration testing}}
+      \item {Acquired the capability of handling \textbf{team-leading responsibilities}}
+      \item {Designed and developed a logging system for the \textbf{Telegram Bot}}
+    \end{itemize}
+  }
+  {
+    Go, Kubernetes, Kubespray, Helm, MongoDB, ElasticSearch, Microsoft Graph, Microsoft Office 365, Microsoft Exchange Server,
+    gRPC, Gitlab CI, JWT, OAuth2, Telegram API, Integration testing, Golang stretchr/testify, golang/oauth2, gomock, urfave/cli, RESTful API, Docker, SOAP, JSON, logrus, Docker-compose, Gorilla mux, Makefile, Microservices, XML,
+    Chartmuseum, Helm charts
+  }
   \emptySeparator
-  \consultantexperience
-  {Mars 2012}       {Ingénieur Consultant}{Altran Technologies}{France}
-  {Décembre 2007}   {IT Specialist}{IBM, Software Solutions Center of Excellence}
-                    {
-                      \begin{itemize}
-                        \item \textbf{Projet eTACT} pour \href{https://www.edqm.eu/fr/contexte-mission-cd-p-phcmed.html}{EDQM} : Conception et développement JEE.
-                        \item Application \emph{Android} pour tablette : Conception et développement.
-                        \item Projets d'intégration, \emph{Enterprise Service Bus} (ESB) et moteur de processus:
-                        \begin{itemize}
-                          \item Conception et développement JEE
-                          \item Définition et implémentation des processus métiers et médiations
-                        \end{itemize}
-                        \item Solutions RFID : Conception et développement Java (JEE, JSE et JME), Analyse, \emph{POC}, documentation et présentation technique du protocole ONS
-                      \end{itemize}
-                    }
-                    {Rational Software Architect (\emph{RSA}),Eclipse,\emph{WAS} 7,DB2,Hibernate,Ant,RichFaces,Infosphere Traceability Server,Android,Websphere Integration Developer,Websphere Process Server}
-  \emptySeparator         
+
   \experience
-  {Novembre 2007}  {Ingénieur d'étude}{IBM}{France}
-  {Février 2007}   {
-                      Projet de prototypage \emph{Campus Nova} pour le Crédit Agricole : Développement d'une solution de paiement NFC sur téléphones portables.  
-                      \begin{itemize}
-                        \item Implémentation d'un porte monnaie électronique                                            
-                        \item Intégration avec une plateforme de paiement en ligne  
-                      \end{itemize}
-                  }
-                  {J2ME,Java Card,DB2,\emph{WAS}}  
+  {Apr. 2019} {Eggnog.chat}{Minsk}{Senior Software Engineer}
+  {Feb. 2020}
+  {
+    B2B system for catering based on \textbf{face recognition} and restaurant \textbf{chatbots}. Eggnog integrates messenger marketing
+    tools (mass message distribution to messengers, loyalty programs, feedback, cashless tips payment) that allow
+    restaurants to create loyal communities for repeated sales, upsell, and customer returns. The system allows an administrator to create
+    customized menu dishes in the admin panel manually or import a ready menu by Google Sheets.
+    \begin{itemize}
+      \item {\textbf{Created the core of the entire project} based on face recognition followed by interaction with
+      the user (via WhatsApp, Telegram, and Viber) and the restaurant administrator (via Slack)}
+      \item {\textbf{Implemented WhatsApp API based on WebSockets} daemon, which allowed to have WhatsApp integration and \textbf{attracted 70\% of customers}}
+      \item {\textbf{Created} a system of \textbf{mass distribution of promotions by messengers}(WhatsApp, Viber and Telegram)}
+      \item {Developed admin panel from scratch}
+      \item {Designed and implemented customers dishes API with ordering}
+      \item {Integrated of Internet Acquiring  (Sberbank, Bepaid)}
+      \item {Developed uploading catering menu using Google Sheets as a database}
+      \item {Implemented user loyalty logic related to completed orders}
+    \end{itemize}
+  }
+  {
+    Go, Gorilla mux, gomock, PHP 7.3, Symfony 4, Doctrine ORM, Composer, PHPUnit, Codeception, Unit testing, Integration testing,
+    Twig, Docker, Docker-compose, PostgreSQL, migrations, Redis, RabbitMQ, WebSockets, Webhooks, Slack API, Viber API, Telegram API,
+    Jenkins CI, Gitlab CI, Google Cloud, GCP Storage, GCP Compute Engine, GitLab, GIT, Nginx, php-fpm, Google Sheets API, Google Drive
+  API, Sberbank API, Bepaid API, Bash, npm, React JS, JavaScript, HTML 5, AJAX, ngrok, JSON, YAML, REST API, DDD, OOP, Clean architecture,
+    OPcache, Bootstrap 4, BSON, Dependency Injection, Computer Vision, Neural Networks, Machine Learning
+  }
+  \emptySeparator
+
+  \experience
+    {Oct. 2017} {Praca.by}{Minsk}{Senior Software Engineer}
+    {Apr. 2019}
+    {
+      The largest job search portal in Belarus(> 1.2M users).
+      The product is cross-platform and supports API and interface for mobile apps (iOS and Android) and SPA.
+      There are numerous modules in the platform such as the CV and vacancies auto-search, hiring statistics, admin panel,
+      email and push notifications(handles > 10K actions per hour), etc. The portal is optimized for high-load traffic and
+      handles constantly updated events in several databases.
+      \begin{itemize}
+        \item {Creation of the \textbf{auto-search} of the relevant CVs and Vacancies for users, that feature \textbf{increased customers on 25\%}.}
+        \item {\textbf{Migrated} the application infrastructure \textbf{to Docker}, \textbf{reducing deployment time} at least \textbf{50\%}}
+        \item {\textbf{Updated} the portal \textbf{to the SPA mode}}
+        \item {Implemented vacancies and CV \textbf{search on the geographical map} using Yandex.Maps}
+        \item {Developed multistep CV wizard (aka CV builder)}
+        \item {Integrated registration and authentication via third-party services: Google, Facebook, VK, Odnoklassniki}
+        \item {Developed vacancies logic which depends on the location of the employer}
+        \item {Designed and implemented the module that uploaded employees' experience in the DB and Sphinx for the search system}
+        \item {Developed incoming and outgoing proposals functionality}
+        \item {Improved CVs and vacancies moderation functionality}
+      \end{itemize}
+    }
+    {
+      Go, PHP 5/7, Zend Framework 2, Doctrine ORM, PHP BC Math, Docker, Docker-compose, Vagrant, Ansible,
+      MySQL, MongoDB, JavaScript, jQuery, Gulp, npm, WebSockets, RabbitMQ, Sphinx Search, SphinxQL, JSON-RPC, RESTful,
+      Nginx, php-fpm, Jenkins CI, Phing, GIT, Bitbucket, Cron, Bash Shell, Yandex Maps API, AJAX, Google API, Facebook API, VK API,
+      Odnoklassniki API, OPcache, Bootstrap
+    }
+  \emptySeparator
+
+  \experience
+    {Oct. 2013} {normativka.by}{Minsk}{Senior Software Engineer}
+    {Oct. 2017}
+    {
+      The portal allows to store, search, use, and manage legislative information that provides a full range of legal,
+      analytical, and reference information for accountants, lawyers, economists, and human resources workers.
+      The system has plenty of tools (advanced search of documents, counterparty information search, personal consulting service,
+      thematic guides) that allow one to conveniently perform daily routines.
+      \begin{itemize}
+        \item {Developed the updating of billing business logic}
+        \item {Implemented automatic testing via the Codeception: acceptance (Selenium + Webdriver), functional and unit tests}
+        \item {Designed and implemented the client installment payment system}
+        \item {Implemented a bonus reward/deprivation system for the project sales department}
+        \item {Implemented a lot of reports using SQL}
+        \item {Implemented a trial access module to the service}
+        \item {Developed Purchase Order Constructor}
+        \item {Designed and implemented the system for selling a limited count of view documents}
+        \item {Developed the module of managing support tickets}
+      \end{itemize}
+    }
+    {
+      PHP 5/7, Zend Framework 2, Selenium, php-webdriver, MySQL, MariaDB, JavaScript, jQuery, Vagrant, Ansible, Nginx,
+      Apache HTTP Server 2, Codeception, Memcached, Phing, SOAP, GIT, Bitbucket, Unit testing, Acceptance testing,
+      Integration testing, Cron, Linux, Debian
+    }
+  \emptySeparator
+
+  \experience
+    {Aug. 2019} {Twizar.net}{Minsk}{Senior Software Engineer}
+    {Jun. 2020}
+    {
+      The service provides a FIFA tournament generator that provides functionality for creating random tournaments
+      with many settings. It allows you to make these tournaments randomly but it balances the tournaments by the rating
+      through existing teams in the platform.
+      \begin{itemize}
+        \item {Designed microservice architecture based on \textbf{AWS Lambda Functions}}
+        \item {Built the "users" microservice involving \textbf{Amazon Cognito} and custom logic}
+        \item {Founded and created the whole project from scratch for frontend, backend, and DevOps parts}
+        \item {Implemented balancing tournaments by the rating through existing teams}
+        \item {Implemented complex logic of combining accurate and random team selection at
+        a time, without duplicates}
+        \item {Developed parser of required data from third-party resources}
+      \end{itemize}
+    }
+    {
+      AWS Lambda, Microservices, Golang, Gorilla mux, Testify, React Material UI, React, Terraform, Mongo Atlas Cloud,
+      AWS Route53, AWS S3 Bucket, AWS API Gateway, Amazon Cognito Federated Identities, Amazon Cognito User Pools
+    }
+  \emptySeparator
+
+
 \end{experiences}

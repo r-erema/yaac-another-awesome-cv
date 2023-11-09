@@ -10,14 +10,34 @@
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 
 %Section compétences
-\sectionTitle{Compétences}{\faTasks}
+\sectionTitle{Competencies}{\faTasks}
 
 	\begin{keywords}
-		\keywordsentry{Language de programmation}{\textbf{Java} (\textbf{JEE}, \textbf{JSE}, JME, Java Card Platform), Microsoft .Net (\textbf{C\#}), \textbf{Typescript}, Javascript}
-		\keywordsentry{Frameworks}{\textbf{Ionic}, Spring Boot, Spring, Angular, ZK}
-		\keywordsentry{Bases de données}{IBM DB2, Oracle Database, Microsoft SQL Server, MySQL, PostgreSQL}
-		\keywordsentry{Outils de développement}{\textbf{IntelliJ Idea}, \textbf{Visual Studio Code}, Eclipse, Maven, svn, git}
-		\keywordsentry{Middleware}{\textbf{JBoss EAP}, \textbf{Apache Tomcat}, Websphere Application Server (\emph{WAS})}
-		\keywordsentry{Systèmes d'exploitation}{Mac OS X, Windows Server, Windows 7, Linux Redhat, Linux CentOS}
-		\keywordsentry{Autres}{Firebase, architecture SOA, RFID, NFC et code barre 1D/2D}
+		\if\devops1{
+			\input{devops_competences}
+			\input{go_competences}
+		}\else{
+			\input{go_competences}
+			\input{devops_competences}
+		}\fi
+
+		\keywordsentry{Technologies}{\textbf{Concurrency}, \textbf{gRPC}, \textbf{JWT}, \textbf{Containers}, \textbf{Queues(RabbitMQ)}, \textbf{OAuth2}, \textbf{Git}, Protocol Buffers,
+			WebSockets, Webhooks, Swagger, JSON, YAML, JSON-RPC, RESTful API, SOAP, Polling, BSON, HTTP/HTTPS, SphinxQL, php-fpm,
+			Machine Learning, Computer vision, OPcache, QR-Code, Reverse Engineering, SVN}
+
+		\keywordsentry{Libraries}{\textbf{Gorilla mux}, \textbf{gin-gonic/gin}, \textbf{gomock}, \textbf{testify},
+			\textbf{golang/oauth2}, go-migrate, Gorm, uber-go/dig,  go-funk, go-delve, go-testfixtures, Golang urfave/cli,
+			Go modules, Zend Framework 2/3, Symfony 3/4/5, Laravel, Composer, Doctrine ORM, Selenium, Codeception, PHPUnit,
+			MODx, Wordpress, Phing, RoadRunner, phpwebdriver, PHP BC Math, Twig}
+
+		\keywordsentry{APIs}{\textbf{Microsoft Graph API}, \textbf{Microsoft Office 365 API}, \textbf{Microsoft Exchange Server API}, \textbf{Slack API},
+			\textbf{Telegram API}, \textbf{Whatsapp API}, \textbf{Google API}, Viber API, Google Sheets API, Google Drive API,
+			Facebook API, Yandex Maps API, VK API, Odnoklassniki API, Sberbank API, Bepaid API, PayOnline API}
+
+		\keywordsentry{OS}{\textbf{Linux}, \textbf{Debian}, \textbf{Ubuntu}, Unix, Windows, Mac OS}
+
+		\keywordsentry{Front-end}{\textbf{ReactJS}, React Material UI, Redux.js, jQuery, Bootstrap, npm, Webpack, Gulp, AJAX, HTML5, SASS}
+
+		\keywordsentry{Languages}{\textbf{English(Upper Intermediate)}, \textbf{Russian(native)}}
+
 	\end{keywords}
